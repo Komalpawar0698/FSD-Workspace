@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // find the length of the objech
+        //.length 
+        //give the length of an array
+
+        var obj={
+            key1:"value1",
+            key2:"value2",
+            key3:"value3",
+            key4:[1,2,3,4],
+        }
+        console.log(obj.key4[0])
+        console.log(obj.length)
+        //length to the length
+        console.log(Object.key(obj))//arry of keys
+        console.log(Object.values(obj))//arry of values
+        //length
+        console.log(Object.key(obj).length)
+        console.log(Object.value(obj).length)
+
+        //JSON
+        //representation of object
+        var jsonObj={
+            "key1":"value1",
+            "key2":"value2",
+        }
+        //converts a JavaScript value to a JavaScript Object Notation (JSON) string.
+        console.log(JSON.stringify(obj1))
+
+        // sending any data to server 
+        // understand string
+        // convert your obj to string and send it to the server
+        //'{"key1":"value1","key2":"value2"}'
+
+        //Converts a JavaScript Object Notation (JSON) string into an object.
+        console.log(JSON.parse('{"key1":"value1","key2":"value2"}'))
+
+        // * pattern 
+
+        // ****
+        // ****
+        // ****
+        // ****
+
+        // *****
+        //nested for loops
+        for (var i=0;i<=4;i++){
+            console.log("*****")
+        }
+        let string=""
+        for (var i=0;i<4;i++){
+            //external loop can be used for no of iteration in diff lines
+            // console.log(i)
+            //i=0
+            //j=0,1,2,3,4=> ******=string
+            //next line
+            for(var j=0;j<4;j++){//4 times*4 times
+                string=string+"*"
+            }
+            //****
+            //next line
+            string=string+"\n"
+        }
+        console.log(string)
+
+        //loops
+        //for loop
+        //for of 
+        //for in =< objects
+        //for (var key in obj{}//syntax)
+        //obj=>objectaname
+        //key=>key
+
+        var obj3={
+                    key1:"value1",
+                    key2:"value2"
+                  } 
+                console.log(obj.key1)
+
+        for (var key in obj3){
+            // console.log(obj.key1)
+            //values
+            console.log(obj3[key])// undefined
+        }
+        // for of 
+        var arr5=[4,7,8,9,100,67]
+        var cars=["89","90"]
+        
+        // for(var index of arr){}
+        for(var value of cars){
+            console.log(value)
+        }
+            
+    </script>
+</body>
+</html>

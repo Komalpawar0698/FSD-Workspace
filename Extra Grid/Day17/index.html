@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <!-- -->
+ <script>
+    const p=new Promise(()=>{})
+    console.log(p)
+
+    const p1=new Promise((resolve,rejected)=>{
+        resolve("Hey, M there at restuarnt at 4:00pm")
+    })
+    console.log(p1)
+
+    const p2=new Promise((resolve,reject)=>{
+        reject("Hey, i wont be able to make at restuarant at 4:00pm")
+    })
+    console.log(p2)
+    
+    const p3=new Promise((resolve,reject)=>{
+        resolve("Hey, M there at restuarnt at 4:00pm")
+        reject("Hey, i wont be able to make at restuarnt at 4:00pm")
+    })
+    console.log(p3) // error we have to handle the errors>
+
+    const p4=new Promise((resolve,reject)=>{
+        resolve("Hey, i wont be able to make at restuarnt at 4:00pm")
+        reject("Hey, M there at restuarnt at 4:00pm")
+    })
+    console.log(p4)//error> we have to handle errors>
+    
+    // conditional statement 
+    // if else
+
+    const p5=new Promise((resolve, reject)=>{
+        if(true){resolve("Hey, M there at restuarnt at 4:00pm")
+        }else{reject("Hey, i wont be able to make at restuarnt at 4:00pm")
+    }
+    })
+    console.log(p5)// error> we have to handle the errors>
+
+    let age=2;
+
+    const p6=new Promise((resolve,reject)=>{
+        if(age>18){
+            resolve("Eligible for voting")
+        }else{
+            reject("Error:Not Eligible for voting")
+        }
+    }) 
+    console.log(p6)// error> we have to handle the errors>
+
+    //age >from the user > prompt
+    p6.then((res)=>consol.log(res)).catch((err)=>console.log(err))
+
+    
+     </script>
+</body>
+</html>

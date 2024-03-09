@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Write a Javascript code for character counts in the textarea-->
+    <input type="text" name="" id="inputText">
+    <!--spanelement=> value -->
+    <!--span element=>c count the value--><br><br>
+    <span id="span1">value is :</span><br><br>
+    <span id="span2">Word count :</span><br><br>
+    <span id="span3">Word count withoutspace:</span><br><br>
+    <span id="span4">Word count withoutspace with cursor:</span><br><br>
+
+    <script>
+        let inputText=document.getElementById('inputText')
+        // console.loh(inputText.value)
+        inputText.addEventListener('input',()=>{
+            document.getElementById('span1').innerText="value is :"+inputText.value;
+            document.getElementById('span2').innerText="Word Count :"+inputText.value.length;
+            document.getElementById('span3').innerText="Word Count WithoutSpace :"+inputText.value.repalce(/ /g,"").length;
+            document.getElementById('span4').innerText="Word Count WithoutSpace with cursor :"+x;
+
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 150px;
+            height: 100px;
+            border: 1px solid red;
+            margin-bottom: 5px;
+            background-color: red;
+        }
+        .statictest{
+            position: static;
+            left: 100px;
+        }
+        .relativetest{
+            position: relative;
+            left: 70px;
+            top: 35px;
+        }
+        .absolutetest{
+            position: absolute;
+            left: 50px;
+            top: 70px;
+            background-color: green;
+        }
+        .absolutetestchild{
+            position: absolute;
+            left: 100px;
+            bottom: 20px;
+            background-color: lime;
+        }
+        /*relative absolute*/
+        .parentDivAbsolute{
+            position: relative;
+            background-color: aqua;
+            width: 400px;
+            height: 300px;
+        }
+        .fixedtest{
+            /*scrool bar*/
+            position: fixed;
+            top: 40px;
+            background-color: chocolate;            
+        }
+        .sticytest{
+            /*scroolbar */
+            position: sticky;
+            top: 80px;
+            left: 20px;
+            background-color: darkolivegreen;
+        }
+
+        
+    </style>
+</head>
+<body>
+ <div class="statictest">Hello World-static</div>
+ <hr>
+ <div class="relativetest" >Hello World-relative</div>
+ <hr>
+ <div class="absolutetest">Hello World-absolute</div>
+ <hr>
+ <div class="parentDivAbsolute">
+    <div class="absolutetestchild">Hello World-relative</div>
+</div> 
+<hr>
+
+<hr>
+<div class="fixedtest">Hello World-Fixed</div>
+</hr>
+
+<hr>
+<div class="statictest">Hello World-sticky</div>
+</hr>
+
+
+<p style="margin-bottom: 1500px;"></p>
+</body>
+</html>

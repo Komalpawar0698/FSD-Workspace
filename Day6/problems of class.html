@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+class uber{
+    constructor(km){
+        this.km=km,
+        this.price=km*3.34
+        console.log(this.km,this.price)
+    }
+    get price(){
+        console.log(`ride cost is${this.price}`)
+    }
+    //method
+    apply Discount(){
+        console.log("discount calculation")
+        let discount=(25/this.price)*100
+        console.log(discount)
+        let price after discount= this.price-discount
+        //console.log(`as a privelge customer,i got an discount and price After discountis RS ${priceafter discount.tofixed()}`)
+        return `As a privelge customer, i got an discount and price after discount is Rs.{price after discount.tofixed()}`
+
+    }
+}
+
+        let ride = new uber (30)
+        ride.gete price()
+        //ride.apply discount()
+        console.log(ride.applydiscount())
+
+// secound problem
+
+    class movie{
+        constuctor(title,studio,rating)
+        this.title=title,
+        this.studio=studio,
+       // this.rating=rating
+
+       if (rating==undefined||null){
+            this rating="PG"
+       }else{
+            this rating+rating
+       }
+       getPG(arr){
+        console.log(arr)
+        //rating=>PG -3 obg
+    }
+    
+    }
+    let m1= new movie("casino royal","Eon production","PG13")
+    console.log(m1)
+    
+    console.log(`new movie-${m1.title} the studio ${m1.studio}and the rating${m1rating}`)
+    </script>
+</body>
+</html>

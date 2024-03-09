@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="btnclick(event)">CLICK ME</button>
+     <button id="btn1">CLICK NOW</button>
+    
+    <p id="test"></p>
+    <input type="text" name="" oninput="display(event)" value="">
+    <input type="text" name="" id=" input1" oninput="display(event)"value="">
+   
+    
+    <script>
+        let count=1;
+        function btnclick(event){
+            count++;
+            console.log(event.target)
+            console.log("Button Click Me has been pressed",count)
+            console.log(event.target.innerHTML)
+        }
+
+        //OR
+        let btn1=document.getElementById('btn1')
+        let testpara=document.getElementById('test')
+        console.log(btn1)
+        btn1.addEventListener('click',()=>{
+            console.log("button click now has been pressed")
+            //testpara.innerHTML=`<h1> Click Event</h1>`
+            testpara.innertext="Hello World"
+            testpara.style.backgroundcolor="green"
+            testpara.style.padding="20px"
+
+        })
+
+        function btnclick(event){
+            console.log(event.target.value)
+            testpara.innertext=event.target.value
+            testpara.style.backgroundcolor="aqua"
+            testpara.style.padding="30px"
+        }
+
+        input1.addEventListener('input',(event)=>{
+            testpara.innertext=event.target.value
+            testpara.style.backgroundcolor="orange"
+            testpara.style.padding="20px"
+        })
+
+        function blurdisplay(event){
+            console.log(event.target.value)
+            testpara.innertext=event.target.value
+            testpara.style.backgroundcolor="red"
+            testpara.style.padding="20px"
+        }
+    </script>
+</body>
+</html>

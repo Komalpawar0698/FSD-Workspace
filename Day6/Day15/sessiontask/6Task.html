@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--With Javascript write a simple from validation-->
+    <form unsubmit="formsubmit(event)">
+        <label for="uname">usermane:</label>
+        <input type="text" name="" id="uname" required>
+        <span id="unameError"></span>
+
+        <br><br>
+
+        <lable for="pass">password:</lable>
+        <input type="password" name="" id="pass" required>
+        <span id="passError"></span>
+
+        <br><br>
+
+        <input type="submit" value="submit">
+
+    </form>
+    <script>
+        function formsubmit({
+            event.preventDefault();
+            console.log(1)
+            let username=document.getElementById('uname').value
+            let password=document.getElementById('pass'.value)
+            console.log(username,password)
+            if(username.length<5){
+                document.getElementById('unameEroor').innerText="username should be more than 5 characters"
+            }
+            ig(passeord.length==5){
+                document.getElementById('passError').innerText="passWord is weak!!!"
+            }
+            if(password.length<5){
+                document.getElementById('passError'),innerText="passWord not acceptable!!!"
+            }
+        })
+    </script>
+
+</body>
+</html>

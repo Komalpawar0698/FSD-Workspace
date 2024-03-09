@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    class car{
+        //constructor
+        // special value of assiging the value in classes 
+        constructor(name,year)
+            console.log("constructor")
+            // about the feature
+            this.name,
+            this.year
+            //console.log(this.name,this.year)
+            console.log(name)
+            // METHOD
+            get Details(){
+                console.log("HI HELLO FROM GET DETAILS)")
+                console.log(name)
+                console.log(this.name)
+
+            }
+
+        // create an another method,
+        //current car i own is ...i purchase in a year
+    }
+
+    let s1= new car("audi, 2023")
+    // new keywords
+    console.log(s1)//object
+    console.log(s1.name,s1.year)
+
+    let s2=new car("BMW",2024)//args
+    //constructorwii be called always first
+     console.log(s2)
+    
+     s2.getDetails()
+     s1.getDetais()
+
+
+     class person{
+        constructor(name, age, weight, ){
+            console.log("constructor")
+            this.name=name,
+            this.age=age,
+            this.weight=weight,
+            console.log(this.name,this.age,this.weight,)
+        }
+
+     }
+
+     let p1=new person("kavya",2, 10)
+     console.log(p1)
+     console.log(p1.name, p1.age,p1.weight)
+                //OR
+                console.log(`p1/person-${p1.name}with age group of${p1.age}registered sucessfully from ${p1.place}location)
+
+                //deconstructring
+                let(name,age,place)=p1
+                
+            
+
+    </script>
+</body>
+</html>

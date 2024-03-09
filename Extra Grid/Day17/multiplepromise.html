@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        constp5=new Promise((resove,reject)=>{
+            if(true){
+                resolve("P5=>Hey, Timer Accepted the request")               
+            }else{
+                reject("P5=>Hey, Rejected the timer")
+            }
+        })
+        // console.log(p5)
+
+        const p6=new Promise((resoleve, reject)=>{
+            if(true){
+                settimeout(()=>resolve("P6=>Hey, Timer Accepted the request")
+            }else{
+                reject("P6=>Hey, Rejected the timer")
+            }            
+        })
+        // console.log(p6)
+
+        const p7=new Promise((resolve,reject)=>{
+            if(true){
+                setTimeout(()=>resolve("p7=>Hey,Timer Accepted the request"))
+            }else{
+                reject("p7=>Hey, Rejected the Timer")
+            }   
+        })
+        console.log(p7)
+        p5.then(res=>console.log(res)),catch(err=>console.log(err))
+        p6.then(res=>console.log(res)).catch(err=>console.log(err))
+        p7.then(res=>console.log(res)).catch(err=>console.log(err))
+
+        //Promise All
+        promise.all([p5,p6,p7]).then(res=>console.log(res)).catch(err=>console.og)
+
+
+        </script>
+</body>
+</html>
